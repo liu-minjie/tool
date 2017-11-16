@@ -2,14 +2,14 @@
 
 ```
 npm install -g yo
-npm install generator-enhancer -g
+npm install generator-xxxx -g
 ```
 or
 
 ```
 npm install -g cnpm --registry=https://registry.npm.taobao.org
 npm install -g yo
-cnpm install generator-enhancer -g
+cnpm install generator-xxxx -g
 ```
 
 
@@ -20,19 +20,19 @@ cnpm install generator-enhancer -g
 ```
 mkdir testProject
 cd testProject
-yo enhancer
+yo xxxx
 ```
 
 ## add page
 
 ```
-yo enhancer:page
+yo xxxx:page
 ```
 
 ## add component
 
 ```
-yo enhancer:component
+yo xxxx:component
 ```
 
 ## i18n
