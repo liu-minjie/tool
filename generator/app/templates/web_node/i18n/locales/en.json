@@ -1,0 +1,6 @@
+{
+    "title": "title",
+    "tip.user.login.fail": "login fail",
+    "tip.user.not.login": "user not login",
+    "tip.invalid.argument": "invalid argument"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "apps-daily-publish",
+  "version": "1.0.0",
+  "description": "apps daily publish tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apps-daily-publish"
+  ],
+  "author": {
+    "name": "minjieliu"
+  },
+  "license": "ISC",
+  "dependencies": {
+  }
+}

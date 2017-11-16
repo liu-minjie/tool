@@ -1,0 +1,22 @@
+{
+  "name": "https-auto",
+  "description": "",
+  "version": "0.1.0",
+  "author": {
+    "email": "",
+    "name": "minjielmj"
+  },
+  "dependencies": {
+    "background-service-runner": "^0.91.10",
+    "btoa": "^1.1.2",
+    "node-webcrypto-ossl": "^1.0.21",
+    "request": "^2.81.0",
+    "shelljs": "^0.7.7",
+    "w3c-xmlhttprequest": "^2.1.2",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "scripts": {
+    "start": "sudo node test.js"
+  },
+  "devDependencies": {}
+}

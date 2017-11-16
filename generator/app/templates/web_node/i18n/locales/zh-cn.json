@@ -1,0 +1,6 @@
+{
+	"title": "title",
+	"tip.user.login.fail": "登录失败",
+	"tip.user.not.login": "用户未登录",
+	"tip.invalid.argument": "参数非法"
+}

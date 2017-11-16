@@ -1,0 +1,33 @@
+{
+  "name": "example-configurator",
+  "description": "example-configurator",
+  "version": "0.1.0",
+  "author": {
+    "email": "purejs@126.com"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.5",
+    "browser-sync-webpack-plugin": "^1.1.3",
+    "fs-extra": "~0.26.7",
+    "jsonp": "~0.2.0",
+    "less": "^2.7.2",
+    "less-loader": "~2.2.3",
+    "promise": "~7.0.4"
+  },
+  "scripts": {
+    "start": "webpack --watch"
+  },
+  "devDependencies": {
+    "autoprefixer-loader": "~3.1.0",
+    "css-loader": "~0.10.1",
+    "debug": "2.1.3",
+    "file-loader": "^0.8.5",
+    "handlebars": "~4.0.5",
+    "handlebars-loader": "~1.1.4",
+    "less-loader": "~2.2.1",
+    "style-loader": "~0.10.2",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.10",
+    "webpack-dev-server": "^1.14.0"
+  }
+}

@@ -1,0 +1,7 @@
+node_modules/
+app/templates/**/.git/
+app/templates/**/node_modules/
+.git/
+app/templates/*/.git/
+app/templates/*/node_modules/
+

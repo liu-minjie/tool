@@ -1,0 +1,26 @@
+#!/usr/bin/env node
+var config = require('../config');
+var log4js = require('log4js');
+log4js.configure(config.logSettings);
+var logger = log4js.getLogger('example');
+var graceful = require('graceful');
+var app = require('../app');
+
+app.set('port', process.env.PORT || 5005);
+var server = app.listen(app.get('port'), function() {
+    logger.info('NODE_ENV = ' + process.env.NODE_ENV);
+    logger.info('Visit http://127.0.0.1:' + server.address().port);
+});
+
+graceful({
+    server: server,
+    killTimeout: 30 * 1000,
+    error: function(err, throwErrorCount) {
+        if (err.message) {
+            err.message +=
+                ' (uncaughtException throw ' + throwErrorCount +
+                ' times on pid:' + process.pid + ')';
+        }
+        logger.error(err);
+    }
+});

@@ -1,0 +1,40 @@
+#!/usr/bin/env node
+
+var webpack = require('webpack');
+var config = require('./webpack.config.js');
+var applescript = require('applescript');
+
+const script = `tell application "Google Chrome"
+    set atab to active tab of front window
+    if (URL of atab contains "previewer") then
+        tell atab
+            execute javascript "window.location.reload()"
+        end tell
+    end if
+end tell`;
+
+
+
+var compiler = webpack(config);
+
+compiler.watch({}, (err, stats) => {
+    console.log(err);
+    console.log(stats.toString({
+        colors: true,
+        modules: false,
+        children: false,
+        chunks: false,
+        chunkModules: false,
+        warnings: false
+    }));
+    applescript.execString(script, function(err, rtn) {});
+});
+
+/*
+var webpackDevServer = require('webpack-dev-server');
+var server = new webpackDevServer(compiler, {
+    hot: true
+});
+console.log('server run at: http://127.0.0.1:8001');
+server.listen(8001);
+*/

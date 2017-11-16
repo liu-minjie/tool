@@ -1,0 +1,31 @@
+{
+  "name": "generator-xxxx",
+  "version": "1.0.16",
+  "description": "generator for xxxx",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "author": {
+    "name": "minjie.lmj"
+  },
+  "files": [
+    "app",
+    "page",
+    "component"
+  ],
+  "license": "ISC",
+  "dependencies": {
+    "command-exists": "^0.1.0",
+    "deep-extend": "^0.4.1",
+    "yeoman-generator": "^0.22.5"
+  },
+  "gitHead": "815cbdb5c7f818384df16f917a011bd742ccfbd0",
+  "readme": "ERROR: No README data found!",
+  "_id": "generator-xxxx@1.0.4",
+  "_shasum": "37ca48df829897e80512addd63e02d7c776c4048",
+  "_from": "generator-xxxx@*"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "assets-daily-publish",
+  "version": "1.0.0",
+  "description": "assets daily publish tool",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "assets-daily-publish"
+  ],
+  "author": {
+    "name": "minjieliu"
+  },
+  "license": "ISC",
+  "dependencies": {
+  }
+}
